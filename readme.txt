@@ -1,4 +1,5 @@
 github is a free website
 github is good
 
-git is not that perfect
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
