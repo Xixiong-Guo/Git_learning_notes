@@ -1,0 +1,14 @@
+git init  % add this directory to git repo
+
+git add filename  % add the file to the repo
+git commit -m "modification reason"  % officially commite to repo
+
+git status % check the status of the file
+
+git log %  (or git log --pretty=oneline)
+
+git reset --hard HEAD^  %(HEAD IS CURRENT VERSION, HEAD^ LAST VERSION (OR HEAD~1))
+
+git reset --hard commit_id % do not need full id, first few digits
+
+git reglog % if we forget the commit_id, use it to check history
