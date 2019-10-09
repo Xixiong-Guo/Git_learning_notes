@@ -14,4 +14,6 @@ git reset --hard commit_id % do not need full id, first few digits
 git reglog % if we forget the commit_id, use it to check history
 
 
+UNDERSTANDING HOW STAGE WORKS
 Working directory and Stage (git add, all changes put in stage, before commit)
+After all changes are added and commited, then git status: nothing to commit, working tree clean
