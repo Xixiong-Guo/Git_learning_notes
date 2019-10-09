@@ -12,3 +12,6 @@ git reset --hard HEAD^  %(HEAD IS CURRENT VERSION, HEAD^ LAST VERSION (OR HEAD~1
 git reset --hard commit_id % do not need full id, first few digits
 
 git reglog % if we forget the commit_id, use it to check history
+
+
+Working directory and Stage (git add, all changes put in stage, before commit)
