@@ -62,3 +62,21 @@ f. DONE!!!
 
 
 4. Branch management:
+git checkout -b <name> or git switch -c <name> % create and swith a branch
+git branch % check branch, branch name start with "*"
+git checkout master % switch to master
+git merge <name> % merge the branch to master (in master branch)
+git branch -d <name> % delete branch
+
+Commit conflict: when branch and master change and commit the same file, with different contents, then there's a conflict. Have to manually solve it and then merge.
+
+5. Tag management
+git tag v1.0  % in master branch, new tag "v1.0"
+git tag v0.9 f52c633  % add tag on commit id "....", -a tag name, -m comments
+git tag -d v0.1  % delete tag
+git push origin <tagname>  % push a local tag 
+git push origin :refs/tags/<tagname>  % delete a remote tag
+
+6. Github repo 
+
+If you want to participate in any github project, first of all, fork the repo , change in your own repo (fork repo), pull request to author
