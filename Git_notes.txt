@@ -1,3 +1,5 @@
+1. Basic command:
+
 git init  % add this directory to git repo
 
 git add filename  % add the file to the repo
@@ -14,7 +16,7 @@ git reset --hard commit_id % do not need full id, first few digits
 git reglog % if we forget the commit_id, use it to check history
 
 
-UNDERSTANDING HOW STAGE WORKS
+2. UNDERSTANDING HOW STAGE WORKS
 Working directory and Stage (git add, all changes put in stage, before commit)
 After all changes are added and commited, then git status: nothing to commit, working tree clean
 
@@ -30,8 +32,33 @@ Delete files
 2. Delete mistakely, want to restore: git checkout -- file
 
 
+3.Github repo vs local repo
+
 Push local repo to github
 
 1. New repo on github
 2. git remote add origin git@github.com:Xixiong-Guo/....git
-3. git push -u origin master
+3. git push -u origin master  % first time on repo "-u", following pust use git pust origin master
+
+Reversely, clone repo from github to local:
+git clone git@github.com:directory
+*****************************
+How to solve problem "Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+"
+
+Solution: 
+generate a new ssh key: a. delete /user/../.ssh folder
+b.ssh-keygen -t rsa -C "your@email.com", press "enter" when necessary
+c. two files generated in .ssh folder: id_rsa, id_rsa.pub, copy all contents in id_rsa.pub
+d. github.com - SSH AND GPG KEYS - NEW SSH KEYS, paste the contents, and add ssh key
+e. ssh -T git@github.com, type 'yes'
+f. DONE!!!
+******************************
+
+
+
+4. Branch management:
