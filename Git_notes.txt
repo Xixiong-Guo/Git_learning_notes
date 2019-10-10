@@ -17,3 +17,21 @@ git reglog % if we forget the commit_id, use it to check history
 UNDERSTANDING HOW STAGE WORKS
 Working directory and Stage (git add, all changes put in stage, before commit)
 After all changes are added and commited, then git status: nothing to commit, working tree clean
+
+
+Undo Changes
+
+git checkout -- file  % Undo the changes, back to recent git commit status
+git reset HEAD <file>  % unstage the change, after you already git add, then git checkout
+
+Delete files
+
+1. rm file, then git rm file, and git commit -m "remove ..."  % delete the file from the repo
+2. Delete mistakely, want to restore: git checkout -- file
+
+
+Push local repo to github
+
+1. New repo on github
+2. git remote add origin git@github.com:Xixiong-Guo/....git
+3. git push -u origin master
